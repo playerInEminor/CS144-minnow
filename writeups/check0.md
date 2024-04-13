@@ -23,7 +23,10 @@ bugs, asymptotic performance, empirical performance, required
 implementation time and difficulty, and other factors. Include any
 measurements if applicable.]
 
-- Optional: I had unexpected difficulty with: [describe]
+- Optional: I had unexpected difficulty with:
+  * For peek function, it means "Return all bytes in buffer for peeking", not only the first byte.
+  * Besides, returning sub string of the buffer will cause AddressSanitizer.
+  * Should figure out the diff and relation between "string" and "string_view"
 
 - Optional: I think you could make this lab better by: [describe]
 
